@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2_Receitas_V2", "P2_Receitas_V2\P2_Receitas_V2.csproj", "{A9D2F27E-6765-44DB-B559-575A332C7903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9D2F27E-6765-44DB-B559-575A332C7903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D2F27E-6765-44DB-B559-575A332C7903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D2F27E-6765-44DB-B559-575A332C7903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D2F27E-6765-44DB-B559-575A332C7903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EAFE169-69E4-46AB-B345-90D6CC6848EE}
+	EndGlobalSection
+EndGlobal

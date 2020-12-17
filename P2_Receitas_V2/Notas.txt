@@ -1,0 +1,56 @@
+﻿--------------------------------------
+Menu Login:
+
+1 - Fazer login com username e password
+2 - Fazer login com PIN
+0 - SAIR DA APLICAÇÃO (é a única opção para encerrar a consola)
+--------------------------------------
+Menu Inicial: (Pode ser acessado quantas vezes o usuário desejar)
+
+1 - Adicionar receitas (Adiciona o número de receitas que o usuário deseja)
+2 - Ver receitas (Pergunta ao usuário quais receitas ele deseja ver)
+3 - Favoritar receitas (A lista de favoritos é associada ao usuário, não podendo ser acessada por outros usuários)
+4 - Buscar receitas (Faz busca pelo nome da receita)
+0 - FAZER LOGOFF (Sai do usuário atual e volta ao Menu Login. 
+				  Caso outro usuário faça login, ele consegue ver as receitas inseridas pelo usuário anterior, mas não sua lista de favoritos.
+				  Caso o usuário queira logar novamente, é possível e as receitas estarão salvas, inclusive sua lista de favoritos. 
+				  Enquanto a consola não for fechada, é possível ver todas as receitas inseridas, independente do usuários que a inseriu ou do usuário atual.)
+--------------------------------------
+Adicionar receitas (Pode ser acessado quantas vezes o usuário desejar)
+
+- Pergunta quantas receitas o usuário quer adicionar
+- Para cada receita, pergunta: 
+	- Nome da receita
+	- Categoria (Enum)
+	- Número de ingredientes 
+	- Ingredientes e quantidade
+	- Modo de preparo
+	- Dificuldade (Enum)
+	- Tempo de preparo
+	- Se receita já foi testada ou não
+- Adiciona cada receita em um item do ArrayList receitas no repositório de receitas
+--------------------------------------
+Menu Ver Receitas: (Pode ser acessado quantas vezes o usuário desejar)
+
+1 - Ver todas as receitas
+2 - Ver Receitas Testadas
+3 - Ver Receitas Por Testar
+4 - Ver Receitas Favoritas
+0 - VOLTAR AO MENU INICIAL
+
+De 1 a 3, faz consulta no repositorio de receitas, que retorna um ArrayList com as receitas desejadas, ou nulo, caso não existam registadas receitas da categoria solicitada
+4, faz consulta no repositório de receitas favoritas, que retorna um ArrayList com as receitas favoritas do usuário logado, ou nulo, caso não existam receitas favoritas registadas para o usuário logaado
+0 - Volta ao menu inicial.
+--------------------------------------
+Favoritar receitas (Pode ser acessado quantas vezes o usuário desejar)
+
+- Exibe uma lista com todas as receitas inseridas, exibindo para cada uma:
+	- Número para identificação - Nome | Categoria | Dificuldade
+- Pergunta quantas receitas o usuário deseja favoritar e valida se o valor inserido é maior que zero e menor ou igual ao número de receitas não favoritadas ainda
+- Pergunta quais receitas ele deseja favoritar (pelo número de identificação) e salva as receitas e respectivos usuários (que as favoritam) como um item do ArrayList no repositório de receitas favoritas
+--------------------------------------
+Buscar receitas (Pode ser acessado quantas vezes o usuário desejar)
+
+- Pede para o usuário inserir um texto de pesquisa
+- Verifica se existe alguma receita no repositorio de receita cujo nome contenha o que foi digitado pelo usuário
+- Caso encontre, retorna as receitas encontradas num ArrayList para que seja listado, caso não encontre, retorna um ArrayList vazio e informa ao usuário que não foi encontrada nenhuma receita
